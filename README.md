@@ -9,26 +9,20 @@ Very simple example of how to deploy an ec2 instance with ubuntu and install ngi
 # Install
 
     1 - Clone this repository: 
-    ```sh
-    $ git clone https://github.com/richardhughes/amazon-nginx-terraform.git
-    ```
+
+    git clone https://github.com/richardhughes/amazon-nginx-terraform.git
+
     2 - Enter in directory project and init project: 
-     ```sh
-     $ cd amazon-nginx-terraform
-     $ terraform init.
-     ```
+        cd amazon-nginx-terraform
+        terraform init.
 
 # Run the project
 
     1 - Check plan project:
-    ```sh
-    $ terrform plan
-     ```
+        terrform plan
 
     2 - Do deploy project:
-    ```sh
-    $ terraform apply
-    ```
+        terraform apply
 
 # Acces Nginx webserver
     After deploy, you recieve in your console something like that:
@@ -45,4 +39,4 @@ Very simple example of how to deploy an ec2 instance with ubuntu and install ngi
         Deployed via Terraform
 
 # Destroy the project
-    `$ terraform destroy`
+    terraform destroy
