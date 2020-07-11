@@ -45,6 +45,4 @@ Very simple example of how to deploy an ec2 instance with ubuntu and install ngi
         Deployed via Terraform
 
 # Destroy the project
-    ```sh
-    $ terraform destroy
-    ```
+    `$ terraform destroy`
