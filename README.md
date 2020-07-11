@@ -6,7 +6,7 @@ Very simple example of how to deploy an ec2 instance with ubuntu and install ngi
 
     2 - You need install "aws cli" and credentials configured in you enviremonts, please follow official documentation: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
 
-    3 - You need , please follow official documentation: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
+    3 - You need have ec2-key-pair to have ssh access in webserver, please follow official documentation: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
 
 # Install
 
