@@ -10,7 +10,7 @@ Very simple example of how to deploy an ec2 instance with ubuntu and install ngi
 
     1 - Clone this repository: 
 
-    git clone https://github.com/richardhughes/amazon-nginx-terraform.git
+    git clone https://github.com/jean-git/terraform-aws-ec2-nginx.git
 
     2 - Enter in directory project and init project: 
         cd amazon-nginx-terraform
