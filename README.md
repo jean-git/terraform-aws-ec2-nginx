@@ -2,9 +2,11 @@
 Very simple example of how to deploy an ec2 instance with ubuntu and install nginx webserver on aws
 
 # Before install
-    1 - You need install terraform, please follow offical documentation: https://learn.hashicorp.com/terraform/getting-started/install.html
+    1 - You need install terraform, please follow official documentation: https://learn.hashicorp.com/terraform/getting-started/install.html
 
-    2 - You need install "aws cli" and credentials configured in you enviremonts, please follow offial docuimentation: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
+    2 - You need install "aws cli" and credentials configured in you enviremonts, please follow official documentation: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
+
+    3 - You need , please follow official documentation: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
 
 # Install
 
@@ -15,6 +17,9 @@ Very simple example of how to deploy an ec2 instance with ubuntu and install ngi
     2 - Enter in directory project and init project: 
         cd amazon-nginx-terraform
         terraform init.
+
+    3 - configure you key paier name in main.tf
+        change variable value:   key_name = "YOUR KEY PAIR NAME"
 
 # Run the project
 

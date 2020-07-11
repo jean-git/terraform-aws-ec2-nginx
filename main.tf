@@ -1,5 +1,6 @@
 # Create a new instance of the latest Ubuntu 18.04 on an
 # t2.nano node with an AWS Tag naming it "nginx"
+
 provider "aws" {
   region = "us-east-2"
 }
@@ -12,10 +13,10 @@ data "aws_ami" "ubuntu" {
     values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
   }
 
-#  filter {
-#    name   = "virtualization-type"
-#    values = ["hvm"]
-#  }
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
 
   owners = ["099720109477"] # Canonical
 
@@ -24,11 +25,11 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "nginx" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.nano"
-  key_name = "aws-key-us-east-2"
+  key_name = "aws-key-us-east-2" ### Please replace it to you key pair name ####
   tags = {
     Name = "nginx"
   }
-  user_data = file("install_nginx.sh")
+  user_data = file("install_nginx.sh") #Script to update ubuntu and install nginx webserver
 
   vpc_security_group_ids = [
     aws_security_group.sg_default_ports.id,
